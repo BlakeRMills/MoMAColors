@@ -97,4 +97,49 @@ print.palette <- function(x, ...) {
   
   rect(0, 0.92, n + 1, 1.08, col = rgb(1, 1, 1, 0.8), border = NA)
   text((n + 1) / 2, 1, labels = attr(x, "name"), cex = 2.5, family = "serif")
+  
+  
+  #' Names of colorblind-friendly palettes
+  #'
+  #' Lists all palettes that are colorblind-friendly in the package.
+  #' To be colorblind-friendly, all colors in the palettes must be distinguishable with deuteranopia, protanopia, and tritanopia.
+  #' Use \code{\link{moma.colors}}  to construct palettes or \code{\link{colorblind.friendly}} to test for colorblind-friendliness.
+  #'
+  #'
+  #' @export
+  colorblind_moma_palettes <- c("Alkalay", "Althoff", "Andri", "Connors", "Doughton", "Ernest", "Exter", "Flash",
+                                "Fritsch", "Koons", "Levine2", "Ohchi", "OKeeffe", "Palermo", "Picabia", "Picasso",
+                                "Rattner", "Sidhu", "Smith", "ustwo", "VanGogh", "vonHeyl")
+}
+
+
+# Names whether a palette is colorblind-friendly
+
+#' Colorblind-Friendly Palette Check
+#'
+#' Checks whether a palette is colorblind-friendly. Colorblind-friendliness tested using the 'colorblindcheck' package.
+#' To be colorblind-friendly, all colors in the palettes must be distinguishable with deuteranopia, protanopia, and tritanopia.
+#'
+#' @param palette_name Name of Palette. Choices are: 
+#' \code{Abbott}, \code{Alkalay}, \code{Althoff}, \code{Andri}, \code{Avedon}, \code{Budnitz}, 
+#' \code{Connors}, \code{Doughton}, \code{Ernest}, \code{Exter}, \code{Flash}, \code{Fritsch}, 
+#' \code{Klein}, \code{Koons}, \code{Levine1}, \code{Levine2}, \code{Liu}, \code{Lupi}, 
+#' \code{Ohchi}, \code{OKeeffe}, \code{Palermo}, \code{Panton}, \code{Picabia}, \code{Picasso}, 
+#' \code{Rattner}, \code{Sidhu}, \code{Smith}, \code{ustwo}, \code{VanGogh}, \code{vonHeyl}, 
+#' and \code{Warhol}
+#' @examples
+#' colorblind.friendly("Koons")
+#' @return TRUE/FALSE value whether palette is colorblind-friendly
+#' @export
+colorblind.friendly.moma <- function(palette_name){
+  
+  `%notin%` <- Negate(`%in%`)
+  
+  if (palette_name %notin% names(MoMAPalettes)) {
+    stop("Palette does not exist.")
+  }
+  
+  friendly <- palette_name %in% colorblind_moma_palettes
+  
+  return(friendly)
 }
