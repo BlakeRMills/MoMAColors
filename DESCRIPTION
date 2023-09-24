@@ -4,6 +4,12 @@ Version: 0.0.0.9000
 Author: Blake Robert Mills
 Maintainer: Blake Robert Mills <blakerobertmills@gmail.com>
 Description: What the package does (one paragraph).
+Imports: 
+    ggplot2,
+    ggstream,
+    cowplot,
+    graphics,
+    stats
 License: CC0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
