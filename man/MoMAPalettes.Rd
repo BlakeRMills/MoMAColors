@@ -5,19 +5,19 @@
 \alias{MoMAPalettes}
 \title{Complete list of palettes.}
 \format{
-An object of class \code{list} of length 31.
+An object of class \code{list} of length 35.
 }
 \usage{
 MoMAPalettes
 }
 \description{
 Use names(MoMAPalettes) to return all possible palette names. Current choices are:
-\code{Abbott}, \code{Alkalay}, \code{Althoff}, \code{Andri}, \code{Avedon}, \code{Budnitz},
-\code{Connors}, \code{Doughton}, \code{Ernest}, \code{Exter}, \code{Flash}, \code{Fritsch},
-\code{Klein}, \code{Koons}, \code{Levine1}, \code{Levine2}, \code{Liu}, \code{Lupi},
-\code{Ohchi}, \code{OKeeffe}, \code{Palermo}, \code{Panton}, \code{Picabia}, \code{Picasso},
-\code{Rattner}, \code{Sidhu}, \code{Smith}, \code{ustwo}, \code{VanGogh}, \code{vonHeyl},
-and \code{Warhol}
+\code{Abbott}, \code{Alkalay1}, \code{Alkalay2}, \code{Althoff}, \code{Andri}, \code{Avedon},
+\code{Budnitz}, \code{Clay}, \code{Connors}, \code{Dali}, \code{Doughton}, \code{Ernst},
+\code{Exter}, \code{Flash}, \code{Fritsch}, \code{Kippenberger}, \code{Klein}, \code{Koons},
+\code{Levine1}, \code{Levine2}, \code{Liu}, \code{Lupi}, \code{Ohchi}, \code{OKeeffe}, \code{Palermo},
+\code{Panton}, \code{Picabia}, \code{Picasso}, \code{Rattner}, \code{Sidhu}, \code{Smith}, \code{ustwo},
+\code{VanGogh}, \code{vonHeyl}, and \code{Warhol}
 Use \code{\link{moma.colors}} to construct palettes.
 }
 \keyword{datasets}
