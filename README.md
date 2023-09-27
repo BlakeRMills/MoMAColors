@@ -8,5 +8,5 @@ MoMAColors is currently only available through GitHub. Use the following code to
 
 ```r
 # install.packages("devtools")
-devtools::install_github("BlakeRMills/MoMAColors.")
+devtools::install_github("BlakeRMills/MoMAColors")
 ```
