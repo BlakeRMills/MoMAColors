@@ -5,7 +5,7 @@
 \alias{colorblind_moma_palettes}
 \title{Names of colorblind-friendly palettes}
 \format{
-An object of class \code{character} of length 22.
+An object of class \code{character} of length 24.
 }
 \usage{
 colorblind_moma_palettes

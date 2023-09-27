@@ -7,12 +7,12 @@
 #' Use \code{\link{colorblind.friendly.moma}} to check whether palettes are colorblind-friendly.
 #' 
 #' @param palette_name Name of Palette. Choices are: 
-#' \code{Abbott}, \code{Alkalay}, \code{Althoff}, \code{Andri}, \code{Avedon}, \code{Budnitz}, 
-#' \code{Connors}, \code{Doughton}, \code{Ernest}, \code{Exter}, \code{Flash}, \code{Fritsch}, 
-#' \code{Klein}, \code{Koons}, \code{Levine1}, \code{Levine2}, \code{Liu}, \code{Lupi}, 
-#' \code{Ohchi}, \code{OKeeffe}, \code{Palermo}, \code{Panton}, \code{Picabia}, \code{Picasso}, 
-#' \code{Rattner}, \code{Sidhu}, \code{Smith}, \code{ustwo}, \code{VanGogh}, \code{vonHeyl}, 
-#' and \code{Warhol}
+#' \code{Abbott}, \code{Alkalay1}, \code{Alkalay2}, \code{Althoff}, \code{Andri}, \code{Avedon}, 
+#' \code{Budnitz}, \code{Clay}, \code{Connors}, \code{Dali}, \code{Doughton}, \code{Ernst}, 
+#' \code{Exter}, \code{Flash}, \code{Fritsch}, \code{Kippenberger}, \code{Klein}, \code{Koons}, 
+#' \code{Levine1}, \code{Levine2}, \code{Liu}, \code{Lupi}, \code{Ohchi}, \code{OKeeffe}, \code{Palermo}, 
+#' \code{Panton}, \code{Picabia}, \code{Picasso}, \code{Rattner}, \code{Sidhu}, \code{Smith}, \code{ustwo}, 
+#' \code{VanGogh}, \code{vonHeyl}, and \code{Warhol}
 #' @param n Number of desired colors. If number of requested colors is beyond the scope of the palette,
 #' colors are automatically interpolated. If n is not provided, the length of the palette is used.
 #' @param type Either "continuous" or "discrete". Use continuous if you want to automatically
@@ -110,9 +110,9 @@ print.palette <- function(x, ...) {
 #'
 #'
 #' @export
-colorblind_moma_palettes <- c("Alkalay", "Althoff", "Andri", "Connors", "Doughton", "Ernest", "Exter", "Flash",
-                              "Fritsch", "Koons", "Levine2", "Ohchi", "OKeeffe", "Palermo", "Picabia", "Picasso",
-                              "Rattner", "Sidhu", "Smith", "ustwo", "VanGogh", "vonHeyl")
+colorblind_moma_palettes <- c("Alkalay1", "Alkalay2", "Althoff", "Andri", "Connors", "Doughton", "Ernst", "Exter", 
+                              "Flash", "Fritsch", "Kippenberger", "Koons", "Levine2", "Ohchi", "OKeeffe", "Palermo", 
+                              "Picabia", "Picasso", "Rattner", "Sidhu", "Smith", "ustwo", "VanGogh", "vonHeyl")
 
 # Names whether a palette is colorblind-friendly
 
@@ -122,12 +122,12 @@ colorblind_moma_palettes <- c("Alkalay", "Althoff", "Andri", "Connors", "Doughto
 #' To be colorblind-friendly, all colors in the palettes must be distinguishable with deuteranopia, protanopia, and tritanopia.
 #'
 #' @param palette_name Name of Palette. Choices are: 
-#' \code{Abbott}, \code{Alkalay}, \code{Althoff}, \code{Andri}, \code{Avedon}, \code{Budnitz}, 
-#' \code{Connors}, \code{Doughton}, \code{Ernest}, \code{Exter}, \code{Flash}, \code{Fritsch}, 
-#' \code{Klein}, \code{Koons}, \code{Levine1}, \code{Levine2}, \code{Liu}, \code{Lupi}, 
-#' \code{Ohchi}, \code{OKeeffe}, \code{Palermo}, \code{Panton}, \code{Picabia}, \code{Picasso}, 
-#' \code{Rattner}, \code{Sidhu}, \code{Smith}, \code{ustwo}, \code{VanGogh}, \code{vonHeyl}, 
-#' and \code{Warhol}
+#' \code{Abbott}, \code{Alkalay1}, \code{Alkalay2}, \code{Althoff}, \code{Andri}, \code{Avedon}, 
+#' \code{Budnitz}, \code{Clay}, \code{Connors}, \code{Dali}, \code{Doughton}, \code{Ernst}, 
+#' \code{Exter}, \code{Flash}, \code{Fritsch}, \code{Kippenberger}, \code{Klein}, \code{Koons}, 
+#' \code{Levine1}, \code{Levine2}, \code{Liu}, \code{Lupi}, \code{Ohchi}, \code{OKeeffe}, \code{Palermo}, 
+#' \code{Panton}, \code{Picabia}, \code{Picasso}, \code{Rattner}, \code{Sidhu}, \code{Smith}, \code{ustwo}, 
+#' \code{VanGogh}, \code{vonHeyl}, and \code{Warhol}
 #' @examples
 #' colorblind.friendly.moma("Koons")
 #' @return TRUE/FALSE value whether palette is colorblind-friendly
@@ -155,12 +155,12 @@ colorblind.friendly.moma <- function(palette_name){
 #' for discrete scales and \code{\link{scale_color_moma_c}} and \code{\link{scale_fill_moma_c}} for continuous scales.
 #'
 #' @param palette_name Name of Palette. Choices are:
-#' \code{Abbott}, \code{Alkalay}, \code{Althoff}, \code{Andri}, \code{Avedon}, \code{Budnitz}, 
-#' \code{Connors}, \code{Doughton}, \code{Ernest}, \code{Exter}, \code{Flash}, \code{Fritsch}, 
-#' \code{Klein}, \code{Koons}, \code{Levine1}, \code{Levine2}, \code{Liu}, \code{Lupi}, 
-#' \code{Ohchi}, \code{OKeeffe}, \code{Palermo}, \code{Panton}, \code{Picabia}, \code{Picasso}, 
-#' \code{Rattner}, \code{Sidhu}, \code{Smith}, \code{ustwo}, \code{VanGogh}, \code{vonHeyl}, 
-#' and \code{Warhol}
+#' \code{Abbott}, \code{Alkalay1}, \code{Alkalay2}, \code{Althoff}, \code{Andri}, \code{Avedon}, 
+#' \code{Budnitz}, \code{Clay}, \code{Connors}, \code{Dali}, \code{Doughton}, \code{Ernst}, 
+#' \code{Exter}, \code{Flash}, \code{Fritsch}, \code{Kippenberger}, \code{Klein}, \code{Koons}, 
+#' \code{Levine1}, \code{Levine2}, \code{Liu}, \code{Lupi}, \code{Ohchi}, \code{OKeeffe}, \code{Palermo}, 
+#' \code{Panton}, \code{Picabia}, \code{Picasso}, \code{Rattner}, \code{Sidhu}, \code{Smith}, \code{ustwo}, 
+#' \code{VanGogh}, \code{vonHeyl}, and \code{Warhol}
 #' @param direction Sets order of colors. Default palette is 1. If direction is -1, palette color order is reversed
 #' @param override_order Colors are picked from palette to maximize readability and aesthetics. This means
 #' that colors are not always selected in sequential order from the full palette. If override_order is set to TRUE,
@@ -186,12 +186,12 @@ scale_color_moma_d <- function(palette_name, direction = 1, override_order = FAL
 #' for discrete scales and \code{\link{scale_color_moma_c}} and \code{\link{scale_fill_moma_c}} for continuous scales.
 #'
 #' @param palette_name Name of Palette. Choices are:
-#' \code{Abbott}, \code{Alkalay}, \code{Althoff}, \code{Andri}, \code{Avedon}, \code{Budnitz}, 
-#' \code{Connors}, \code{Doughton}, \code{Ernest}, \code{Exter}, \code{Flash}, \code{Fritsch}, 
-#' \code{Klein}, \code{Koons}, \code{Levine1}, \code{Levine2}, \code{Liu}, \code{Lupi}, 
-#' \code{Ohchi}, \code{OKeeffe}, \code{Palermo}, \code{Panton}, \code{Picabia}, \code{Picasso}, 
-#' \code{Rattner}, \code{Sidhu}, \code{Smith}, \code{ustwo}, \code{VanGogh}, \code{vonHeyl}, 
-#' and \code{Warhol}
+#' \code{Abbott}, \code{Alkalay1}, \code{Alkalay2}, \code{Althoff}, \code{Andri}, \code{Avedon}, 
+#' \code{Budnitz}, \code{Clay}, \code{Connors}, \code{Dali}, \code{Doughton}, \code{Ernst}, 
+#' \code{Exter}, \code{Flash}, \code{Fritsch}, \code{Kippenberger}, \code{Klein}, \code{Koons}, 
+#' \code{Levine1}, \code{Levine2}, \code{Liu}, \code{Lupi}, \code{Ohchi}, \code{OKeeffe}, \code{Palermo}, 
+#' \code{Panton}, \code{Picabia}, \code{Picasso}, \code{Rattner}, \code{Sidhu}, \code{Smith}, \code{ustwo}, 
+#' \code{VanGogh}, \code{vonHeyl}, and \code{Warhol}
 #' @param direction Sets order of colors. Default palette is 1. If direction is -1, palette color order is reversed
 #' @param override_order Colors are picked from palette to maximize readability and aesthetics. This means
 #' that colors are not always selected in sequential order from the full palette. If override_order is set to TRUE,
@@ -217,12 +217,12 @@ scale_fill_moma_d <- function(palette_name, direction = 1, override_order = FALS
 #' for discrete scales and \code{\link{scale_color_moma_c}} and \code{\link{scale_fill_moma_c}} for continuous scales.
 #'
 #' @param palette_name Name of Palette. Choices are:
-#' \code{Abbott}, \code{Alkalay}, \code{Althoff}, \code{Andri}, \code{Avedon}, \code{Budnitz}, 
-#' \code{Connors}, \code{Doughton}, \code{Ernest}, \code{Exter}, \code{Flash}, \code{Fritsch}, 
-#' \code{Klein}, \code{Koons}, \code{Levine1}, \code{Levine2}, \code{Liu}, \code{Lupi}, 
-#' \code{Ohchi}, \code{OKeeffe}, \code{Palermo}, \code{Panton}, \code{Picabia}, \code{Picasso}, 
-#' \code{Rattner}, \code{Sidhu}, \code{Smith}, \code{ustwo}, \code{VanGogh}, \code{vonHeyl}, 
-#' and \code{Warhol}
+#' \code{Abbott}, \code{Alkalay1}, \code{Alkalay2}, \code{Althoff}, \code{Andri}, \code{Avedon}, 
+#' \code{Budnitz}, \code{Clay}, \code{Connors}, \code{Dali}, \code{Doughton}, \code{Ernst}, 
+#' \code{Exter}, \code{Flash}, \code{Fritsch}, \code{Kippenberger}, \code{Klein}, \code{Koons}, 
+#' \code{Levine1}, \code{Levine2}, \code{Liu}, \code{Lupi}, \code{Ohchi}, \code{OKeeffe}, \code{Palermo}, 
+#' \code{Panton}, \code{Picabia}, \code{Picasso}, \code{Rattner}, \code{Sidhu}, \code{Smith}, \code{ustwo}, 
+#' \code{VanGogh}, \code{vonHeyl}, and \code{Warhol}
 #' @param direction Sets order of colors. Default palette is 1. If direction is -1, palette color order is reversed
 #' @param ... Other arguments passed on to \code{\link[ggplot2]{scale_color_gradientn}}
 #' @import ggplot2
@@ -251,12 +251,12 @@ scale_color_moma_c <- function(palette_name, direction=1, ...){
 #' for discrete scales and \code{\link{scale_color_moma_c}} and \code{\link{scale_fill_moma_c}} for continuous scales.
 #'
 #' @param palette_name Name of Palette. Choices are:
-#' \code{Abbott}, \code{Alkalay}, \code{Althoff}, \code{Andri}, \code{Avedon}, \code{Budnitz}, 
-#' \code{Connors}, \code{Doughton}, \code{Ernest}, \code{Exter}, \code{Flash}, \code{Fritsch}, 
-#' \code{Klein}, \code{Koons}, \code{Levine1}, \code{Levine2}, \code{Liu}, \code{Lupi}, 
-#' \code{Ohchi}, \code{OKeeffe}, \code{Palermo}, \code{Panton}, \code{Picabia}, \code{Picasso}, 
-#' \code{Rattner}, \code{Sidhu}, \code{Smith}, \code{ustwo}, \code{VanGogh}, \code{vonHeyl}, 
-#' and \code{Warhol}
+#' \code{Abbott}, \code{Alkalay1}, \code{Alkalay2}, \code{Althoff}, \code{Andri}, \code{Avedon}, 
+#' \code{Budnitz}, \code{Clay}, \code{Connors}, \code{Dali}, \code{Doughton}, \code{Ernst}, 
+#' \code{Exter}, \code{Flash}, \code{Fritsch}, \code{Kippenberger}, \code{Klein}, \code{Koons}, 
+#' \code{Levine1}, \code{Levine2}, \code{Liu}, \code{Lupi}, \code{Ohchi}, \code{OKeeffe}, \code{Palermo}, 
+#' \code{Panton}, \code{Picabia}, \code{Picasso}, \code{Rattner}, \code{Sidhu}, \code{Smith}, \code{ustwo}, 
+#' \code{VanGogh}, \code{vonHeyl}, and \code{Warhol}
 #' @param direction Sets order of colors. Default palette is 1. If direction is -1, palette color order is reversed
 #' @param ... Other arguments passed on to \code{\link[ggplot2]{scale_color_gradientn}}
 #' @import ggplot2
@@ -280,12 +280,12 @@ scale_fill_moma_c <- function(palette_name, direction=1, ...){
 #' for discrete scales and \code{\link{scale_color_moma_c}} and \code{\link{scale_fill_moma_c}} for continuous scales.
 #'
 #' @param palette_name Name of Palette. Choices are:
-#' \code{Abbott}, \code{Alkalay}, \code{Althoff}, \code{Andri}, \code{Avedon}, \code{Budnitz}, 
-#' \code{Connors}, \code{Doughton}, \code{Ernest}, \code{Exter}, \code{Flash}, \code{Fritsch}, 
-#' \code{Klein}, \code{Koons}, \code{Levine1}, \code{Levine2}, \code{Liu}, \code{Lupi}, 
-#' \code{Ohchi}, \code{OKeeffe}, \code{Palermo}, \code{Panton}, \code{Picabia}, \code{Picasso}, 
-#' \code{Rattner}, \code{Sidhu}, \code{Smith}, \code{ustwo}, \code{VanGogh}, \code{vonHeyl}, 
-#' and \code{Warhol}
+#' \code{Abbott}, \code{Alkalay1}, \code{Alkalay2}, \code{Althoff}, \code{Andri}, \code{Avedon}, 
+#' \code{Budnitz}, \code{Clay}, \code{Connors}, \code{Dali}, \code{Doughton}, \code{Ernst}, 
+#' \code{Exter}, \code{Flash}, \code{Fritsch}, \code{Kippenberger}, \code{Klein}, \code{Koons}, 
+#' \code{Levine1}, \code{Levine2}, \code{Liu}, \code{Lupi}, \code{Ohchi}, \code{OKeeffe}, \code{Palermo}, 
+#' \code{Panton}, \code{Picabia}, \code{Picasso}, \code{Rattner}, \code{Sidhu}, \code{Smith}, \code{ustwo}, 
+#' \code{VanGogh}, \code{vonHeyl}, and \code{Warhol}
 #' @param direction Sets order of colors. Default palette is 1. If direction is -1, palette color order is reversed
 #' @param override_order Colors are picked from palette to maximize readability and aesthetics. This means
 #' that colors are not always selected in sequential order from the full palette. If override_order is set to TRUE,
@@ -307,12 +307,12 @@ scale_colour_moma_d <- scale_color_moma_d
 #' for discrete scales and \code{\link{scale_color_moma_c}} and \code{\link{scale_fill_moma_c}} for continuous scales.
 #'
 #' @param palette_name Name of Palette. Choices are:
-#' \code{Abbott}, \code{Alkalay}, \code{Althoff}, \code{Andri}, \code{Avedon}, \code{Budnitz}, 
-#' \code{Connors}, \code{Doughton}, \code{Ernest}, \code{Exter}, \code{Flash}, \code{Fritsch}, 
-#' \code{Klein}, \code{Koons}, \code{Levine1}, \code{Levine2}, \code{Liu}, \code{Lupi}, 
-#' \code{Ohchi}, \code{OKeeffe}, \code{Palermo}, \code{Panton}, \code{Picabia}, \code{Picasso}, 
-#' \code{Rattner}, \code{Sidhu}, \code{Smith}, \code{ustwo}, \code{VanGogh}, \code{vonHeyl}, 
-#' and \code{Warhol}
+#' \code{Abbott}, \code{Alkalay1}, \code{Alkalay2}, \code{Althoff}, \code{Andri}, \code{Avedon}, 
+#' \code{Budnitz}, \code{Clay}, \code{Connors}, \code{Dali}, \code{Doughton}, \code{Ernst}, 
+#' \code{Exter}, \code{Flash}, \code{Fritsch}, \code{Kippenberger}, \code{Klein}, \code{Koons}, 
+#' \code{Levine1}, \code{Levine2}, \code{Liu}, \code{Lupi}, \code{Ohchi}, \code{OKeeffe}, \code{Palermo}, 
+#' \code{Panton}, \code{Picabia}, \code{Picasso}, \code{Rattner}, \code{Sidhu}, \code{Smith}, \code{ustwo}, 
+#' \code{VanGogh}, \code{vonHeyl}, and \code{Warhol}
 #' @param direction Sets order of colors. Default palette is 1. If direction is -1, palette color order is reversed
 #' @param ... Other arguments passed on to \code{\link[ggplot2]{scale_color_gradientn}}
 #' @import ggplot2
@@ -348,16 +348,16 @@ scale_colour_moma_c <- scale_color_moma_c
 #' # 5 Colors of all Palettes
 #' display.all.moma(5, sequential = FALSE, colorblind_only = FALSE)
 #' @export
-#' @importFrom graphics rect par layout polygon
+#' @importFrom graphics rect par layout polygon plot.new
 
 
 display.all.moma <- function(n, sequential = FALSE, colorblind_only = FALSE, direction = 1, override_order=FALSE){
   if(colorblind_only){
-    N = length(colorblind_moma_palettes)
-    pal_names = colorblind_moma_palettes
+    N <- length(colorblind_moma_palettes)
+    pal_names <- colorblind_moma_palettes
   }else{
-    N = length(MoMAPalettes)
-    pal_names = names(MoMAPalettes)
+    N <- length(MoMAPalettes)
+    pal_names <- names(MoMAPalettes)
   }
   
   orig_pars <- par()
@@ -374,6 +374,7 @@ display.all.moma <- function(n, sequential = FALSE, colorblind_only = FALSE, dir
               col = moma.colors(name, nn, direction= direction,override_order=override_order)[j])
     }
   }
+  
   
   if(sequential){
     for(i in 1:N){
@@ -395,26 +396,36 @@ display.all.moma <- function(n, sequential = FALSE, colorblind_only = FALSE, dir
       
       if(colorblind_only){
         
-        layout(matrix(1:N,6,4))
-        for(i in 1:N) plot_palette(pal_names[i])
+        par(mfrow = c(5, 5))
+        for(i in 1:25){
+          if(i <= length(pal_names)){plot_palette(pal_names[i])}else{plot.new()}
+        }
+        
         
       }else{
+        par(mfrow = c(6, 6))
+        for(i in 1:36){
+          if(i <= length(pal_names)){plot_palette(pal_names[i])}else{plot.new()}
+        }
+      
         
-        layout(matrix(1:N,8,7))
-        for(i in 1:N) plot_palette(pal_names[i])
       }
       
     } else{
       
       if(colorblind_only){
         
-        layout(matrix(1:N,6,4))
-        for(i in 1:N) plot_palette(pal_names[i],n)
+        par(mfrow = c(5, 5))
+        for(i in 1:25){
+          if(i <= length(pal_names)){plot_palette(pal_names[i], n)}else{plot.new()}
+        }
         
       }else{
         
-        layout(matrix(1:N,8,7))
-        for(i in 1:N) plot_palette(pal_names[i],n)
+        par(mfrow = c(6, 6))
+        for(i in 1:36){
+          if(i <= length(pal_names)){plot_palette(pal_names[i], n)}else{plot.new()}
+        }
         
       }
       
@@ -431,12 +442,12 @@ display.all.moma <- function(n, sequential = FALSE, colorblind_only = FALSE, dir
 #' Creates four sample visualizations for testing how a palette looks.
 #'
 #' @param palette_name Name of Palette. Choices are:
-#' \code{Abbott}, \code{Alkalay}, \code{Althoff}, \code{Andri}, \code{Avedon}, \code{Budnitz}, 
-#' \code{Connors}, \code{Doughton}, \code{Ernest}, \code{Exter}, \code{Flash}, \code{Fritsch}, 
-#' \code{Klein}, \code{Koons}, \code{Levine1}, \code{Levine2}, \code{Liu}, \code{Lupi}, 
-#' \code{Ohchi}, \code{OKeeffe}, \code{Palermo}, \code{Panton}, \code{Picabia}, \code{Picasso}, 
-#' \code{Rattner}, \code{Sidhu}, \code{Smith}, \code{ustwo}, \code{VanGogh}, \code{vonHeyl}, 
-#' and \code{Warhol}
+#' \code{Abbott}, \code{Alkalay1}, \code{Alkalay2}, \code{Althoff}, \code{Andri}, \code{Avedon}, 
+#' \code{Budnitz}, \code{Clay}, \code{Connors}, \code{Dali}, \code{Doughton}, \code{Ernst}, 
+#' \code{Exter}, \code{Flash}, \code{Fritsch}, \code{Kippenberger}, \code{Klein}, \code{Koons}, 
+#' \code{Levine1}, \code{Levine2}, \code{Liu}, \code{Lupi}, \code{Ohchi}, \code{OKeeffe}, \code{Palermo}, 
+#' \code{Panton}, \code{Picabia}, \code{Picasso}, \code{Rattner}, \code{Sidhu}, \code{Smith}, \code{ustwo}, 
+#' \code{VanGogh}, \code{vonHeyl}, and \code{Warhol}
 #' @param n Number of desired colors. If number of requested colors is beyond the scope of the palette,
 #' colors are automatically interpolated. If n is not provided, the length of the palette is used.
 #' @param direction Sets order of colors. Default palette is 1. If direction is -1, palette color order is reversed
