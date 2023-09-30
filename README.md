@@ -55,3 +55,21 @@ devtools::install_github("BlakeRMills/MoMAColors")
 ![Avedon](https://github.com/BlakeRMills/MoMAColors/blob/main/PackageImages/Palettes/Avedon.png)
 - George Harrison, 1967, Richard Avedon, Lithograph, [Link](https://www.moma.org/collection/works/8742)
 ***
+
+### Budnitz 
+![Budnitz](https://github.com/BlakeRMills/MoMAColors/blob/main/PackageImages/Palettes/Budnitz.png)
+- Cycle Dunny, 2005, Paul Budnitz, Tristan Eaton, Cycle, Vinyl, [Link](https://www.moma.org/collection/works/109304?artist_id=32733&page=1&sov_referrer=artist)
+***
+
+### Clay 
+![Clay](https://github.com/BlakeRMills/MoMAColors/blob/main/PackageImages/Palettes/Clay.png)
+- Sarah Cross, 1980, Maude Schuyler Clay, Chromogenic print, [Link](https://www.moma.org/collection/works/49695?artist_id=1139&page=1&sov_referrer=artist)
+***
+
+### Connors 
+![Connors](https://github.com/BlakeRMills/MoMAColors/blob/main/PackageImages/Palettes/Connors.png)
+- Egypt, Hard G, 2015, Matt Connors, Acrylic on canvas with painted wood frame, [Link](https://www.moma.org/collection/works/202454?artist_id=36363&page=1&sov_referrer=artist)
+- Colorblind-Friendly
+***
+
+
