@@ -83,8 +83,8 @@ devtools::install_github("BlakeRMills/MoMAColors")
 - Colorblind-Friendly
 ***
 
-### Ernest 
-![Ernest](https://github.com/BlakeRMills/MoMAColors/blob/main/PackageImages/Palettes/Ernest.png)
+### Ernst 
+![Ernst](https://github.com/BlakeRMills/MoMAColors/blob/main/PackageImages/Palettes/Ernst.png)
 - Two Children Are Threatened by a Nightingale (Deux Enfants sont menacés par un rossignol), 1924, Max Ernst, Oil with painted wood elements and cut-and-pasted printed paper on wood with wood frame, [Link](https://www.moma.org/collection/works/79293)
 - Colorblind-Friendly
 ***
