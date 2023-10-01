@@ -217,7 +217,7 @@ copper electrotype filled with resin and fiberglass, [Link](https://www.moma.org
 ***
 
 ### Warhol 
-![Warhol](https://github.com/BlakeRMills/MoMAColors/blob/main/PackageImages/Palettes/Warhol.png)
+![Warhol](https://github.com/BlakeRMills/MoMAColors/blob/main/PackageImages/Palettes/Warhol .png)
 - Collection of Marilyns, 1967, Andy Warhol, Portfolio of ten screenprints, [Link]()
 ***
 
