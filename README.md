@@ -12,6 +12,8 @@ My Website: [Here](https://www.blakerobertmills.com)<br /> Twitter: [Here](https
 
 [Palettes](#palettes)
 
+[Functions](#functions)
+
 ## Install Package
 ### R
 MoMAColors is currently only available through GitHub. Use the following code to download it in R. 
@@ -222,6 +224,93 @@ copper electrotype filled with resin and fiberglass, [Link](https://www.moma.org
 ***
 
 
+## Functions
+You can retrieve palettes using various methods listed below.
+
+```r
+moma.colors("vonHeyl")
+```
+![Ex1](https://github.com/BlakeRMills/MoMAColors/blob/main/PackageImages/Examples/Ex1.png)
+
+```r
+moma.colors("Liu", n=6, type="discrete")
+```
+![Ex2](https://github.com/BlakeRMills/MoMAColors/blob/main/PackageImages/Examples/Ex2.png)
+
+
+```r
+moma.colors("Clay", 5)
+```
+![Ex3](https://github.com/BlakeRMills/MoMAColors/blob/main/PackageImages/Examples/Ex3.png)
+
+
+```r
+moma.colors("Ernst" , n=100, type="continuous")
+```
+![Ex4](https://github.com/BlakeRMills/MoMAColors/blob/main/PackageImages/Examples/Ex4.png)
+
+
+### ggplot2 Examples
+
+Here are also some ways you can incorporate this package into {ggplot2}
+
+```r
+ggplot(data=iris, aes(x=Species, y=Petal.Length, fill=Species)) +
+  geom_violin() +
+  scale_fill_manual(values=moma.colors("Smith", 3))
+```
+![Ex5](https://github.com/BlakeRMills/MoMAColors/blob/main/PackageImages/Examples/FillExample.png)
+
+```r
+ggplot(data=iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) +
+  geom_point(size=2) +
+  scale_color_moma_d("Liu")
+```
+![Ex6](https://github.com/BlakeRMills/MoMAColors/blob/main/PackageImages/Examples/ColorMomaExample.png)
+
+```r
+ggplot(data=iris, aes(x=Species, y=Sepal.Width, color=Sepal.Width)) +
+  geom_point(size=3) +
+  scale_color_gradientn(colors=moma.colors("Alkalay2"))
+```
+![Ex7](https://github.com/BlakeRMills/MoMAColors/blob/main/PackageImages/Examples/GradientExample.png)
+
+```r
+library(urbnmapr)
+countydata %>%
+  left_join(counties, by = "county_fips") %>%
+  filter(state_name =="Nebraska") %>%
+  ggplot(mapping=aes(long,lat,group = group, fill = horate)) +
+  geom_polygon(color="black",size=.25) +
+  scale_fill_moma_c("Kippenberger") +
+  coord_fixed() +
+  labs(fill="Homeownership rate") +
+  theme_void()
+```
+![Ex8](https://github.com/BlakeRMills/MoMAColors/blob/main/PackageImages/Examples/GradientMomaExample.png)
+
+
+## Colorblind Friendly Checking
+The package has been updated to check for colorblind-friendlyness
+You can list out the colorblind-friendly palettes with the following code
+```r
+MoMAColors::colorblind_moma_palettes
+
+ [1] "Alkalay1"     "Alkalay2"     "Althoff"      "Andri"        "Connors"      "Doughton"    
+ [7] "Ernst"        "Exter"        "Flash"        "Fritsch"      "Kippenberger" "Koons"       
+[13] "Levine2"      "Ohchi"        "OKeeffe"      "Palermo"      "Picabia"      "Picasso"     
+[19] "Rattner"      "Sidhu"        "Smith"        "ustwo"        "VanGogh"      "vonHeyl"     
+```
+
+You can also test is a palettes is colorblind friendly using the function provided
+
+```r
+MoMAColors::colorblind.friendly.moma("Palermo")
+[1] TRUE
+
+MoMAColors::colorblind.friendly.moma("Avedon")
+[1] FALSE
+```
 
 
 
