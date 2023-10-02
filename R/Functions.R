@@ -511,7 +511,8 @@ test.plots.moma <- function(palette_name, n, direction=1, override_order=FALSE){
   
   title <- ggdraw() + draw_label(palette_name, fontface = "bold", x = 0.5, hjust = 0.5, size=rel(20))
   grid <- plot_grid(pie_plot, stream_plot, violin_plot, bars_plot,  nrow=2)
-  test_grid <- plot_grid(title, grid, ncol=1, rel_heights = c(0.1, 1))
+  test_grid <- plot_grid(title, grid, ncol=1, rel_heights = c(0.1, 1)) + 
+    theme(plot.background = element_rect(color="white", fill="white"))
   
   print(test_grid)
 }
