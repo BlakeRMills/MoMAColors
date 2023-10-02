@@ -23,7 +23,7 @@ MoMAPalettes <- list(
   Clay = list(c("#c48329", "#8b3b36", "#a2b4b7", "#514a2e", "#cf9860", "#8E4115"), c(1:6), colorblind = FALSE),
   Connors = list(c("#d92a05", "#f35d36", "#fc9073", "#ffba1b", "#60cfa1"), c(5, 1, 4, 3, 2), colorblind=TRUE),
   Dali = list(c("#b4b87f", "#9c913f", "#585b33", "#6ea8ab", "#397893", "#31333f","#8f5715", "#ba9a44", "#cfbb83"), c(8, 3, 7, 1, 5, 9, 2, 6, 4), colorblind = FALSE),
-  Doughton = list(c("#155b51", "#216f63", "#2d8277", "#3a9387", "#45a395", "#c468b2","#af509c", "#803777", "#5d2155", "#45113f"), c(1:10), colorblind = TRUE),
+  Doughton = list(c("#155b51", "#216f63", "#2d8277", "#3a9387", "#45a395", "#c468b2","#af509c", "#803777", "#5d2155", "#45113f"), c(9, 3, 7, 1, 5, 6, 2, 8, 4, 10), colorblind = TRUE),
   Ernst = list(c("#e8e79a", "#c2d89a", "#8cbf9a", "#5fa2a4", "#477b95", "#315b88", "#24396b", "#191f40"), c(4, 2, 6, 1, 3, 8, 5, 7), colorblind=TRUE),
   Exter = list(c("#ffec9d", "#fac881", "#f4a464", "#e87444", "#d9402a", "#bf2729", "#912534", "#64243e", "#3d1b28", "#161212"), c(4, 9, 2, 5, 7, 1, 6, 3, 8, 10), colorblind=TRUE),
   Flash = list(c("#e3c0db", "#db95cb", "#cd64b5", "#B83D9F", "#900c7e", "#680369", "#41045a", "#140e3a"), c(4, 6, 1, 7, 2, 5, 3, 8), colorblind=TRUE),
