@@ -165,7 +165,7 @@ copper electrotype filled with resin and fiberglass, [Link](https://www.moma.org
 
 ### Panton 
 ![Panton](https://github.com/BlakeRMills/MoMAColors/blob/main/PackageImages/Palettes/Panton.png)
-- Name, 1974, Verner Panton, Printed cotton, [Link](https://www.moma.org/collection/works/292747?artist_id=4485&page=1&sov_referrer=artist)
+- Spectrum Textile, 1974, Verner Panton, Printed cotton, [Link](https://www.moma.org/collection/works/292747?artist_id=4485&page=1&sov_referrer=artist)
 ***
 
 ### Picabia 
