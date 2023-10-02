@@ -24,6 +24,9 @@ devtools::install_github("BlakeRMills/MoMAColors")
 ```
 ## Palettes
 
+### All Palettes
+![AllPals](https://github.com/BlakeRMills/MoMAColors/blob/main/PackageImages/Examples/Ex9.png)
+
 ### Abbott 
 ![Abbott](https://github.com/BlakeRMills/MoMAColors/blob/main/PackageImages/Palettes/Abbott.png)
 - Tress, 1994, Matthew Abbott, Synthetic polymer paint and modeling paste on linen, [Link](https://www.moma.org/collection/works/79703?artist_id=7388&page=1&sov_referrer=artist)
@@ -250,6 +253,37 @@ moma.colors("Ernst" , n=100, type="continuous")
 ![Ex4](https://github.com/BlakeRMills/MoMAColors/blob/main/PackageImages/Examples/Ex4.png)
 
 
+## Displaying All Palettes
+All palettes can be displayed at once using the display.all.moma function. This returns all palettes in their entirety if no n is provided.
+
+```r
+display.all.moma()
+```
+![Ex9](https://github.com/BlakeRMills/MoMAColors/blob/main/PackageImages/Examples/Ex9.png)
+
+You are also able to enter the desired number of colors to view all palettes at the specific level. 
+
+```r
+display.all.moma(5)
+```
+![Ex10](https://github.com/BlakeRMills/MoMAColors/blob/main/PackageImages/Examples/Ex10.png)
+
+You are able to only view colorblind-friendly palettes with the colorblind_only parameter.
+
+```r
+display.all.moma(colorblind_only = T)
+```
+![Ex11](https://github.com/BlakeRMills/MoMAColors/blob/main/PackageImages/Examples/Ex11.png)
+
+All other parameters in moma.colors can be passed into display.all.moma
+
+```r
+display.all.moma(n=4, override_order = T, direction = -1)
+```
+![Ex12](https://github.com/BlakeRMills/MoMAColors/blob/main/PackageImages/Examples/Ex12.png)
+
+
+
 ### ggplot2 Examples
 
 Here are also some ways you can incorporate this package into {ggplot2}
@@ -312,7 +346,17 @@ MoMAColors::colorblind.friendly.moma("Avedon")
 [1] FALSE
 ```
 
+## Test Plots
 
+The test.plots.moma function returns 4 different visualization types to get a quick glimse of how a desired palette would look in practice. This includes a starburst plot, a stream plot, a violin plot, and a stack bar chart. The test.plots.moma function can take all parameters that moma.colors is able to; however, plots cannot be generated when more than 26 colors are requested. 
 
+```r
+test.plots.moma("Picabia")
+```
+![Ex13](https://github.com/BlakeRMills/MoMAColors/blob/main/PackageImages/Examples/Ex13.png)
 
+```r
+test.plots.moma("Picasso", 5, direction = -1)
+```
 
+![Ex14](https://github.com/BlakeRMills/MoMAColors/blob/main/PackageImages/Examples/Ex14.png)
