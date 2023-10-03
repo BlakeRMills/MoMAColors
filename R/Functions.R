@@ -353,8 +353,13 @@ scale_colour_moma_c <- scale_color_moma_c
 
 display.all.moma <- function(n, sequential = FALSE, colorblind_only = FALSE, direction = 1, override_order=FALSE){
   if(colorblind_only){
-    N <- length(colorblind_moma_palettes)
-    pal_names <- colorblind_moma_palettes
+    
+    pal_names <- if(missing(n)==T){colorblind_moma_palettes}else{
+      names(Filter(function(x) x$colorblind == TRUE && length(x[[1]]) >= n, MoMAPalettes))
+    }
+    N <- length(pal_names)
+    if(N == 0){stop("No palettes matching search critera exist.")}
+    
   }else{
     N <- length(MoMAPalettes)
     pal_names <- names(MoMAPalettes)
@@ -395,9 +400,10 @@ display.all.moma <- function(n, sequential = FALSE, colorblind_only = FALSE, dir
     if(missing(n)){
       
       if(colorblind_only){
+        len_out <- 5*ceiling(N / 5)
         
-        par(mfrow = c(5, 5))
-        for(i in 1:25){
+        par(mfrow = c(5, len_out/5))
+        for(i in 1:len_out){
           if(i <= length(pal_names)){plot_palette(pal_names[i])}else{plot.new()}
         }
         
@@ -414,9 +420,9 @@ display.all.moma <- function(n, sequential = FALSE, colorblind_only = FALSE, dir
     } else{
       
       if(colorblind_only){
-        
-        par(mfrow = c(5, 5))
-        for(i in 1:25){
+        len_out <- 5*ceiling(N / 5)
+        par(mfrow = c(5, len_out/5))
+        for(i in 1:len_out){
           if(i <= length(pal_names)){plot_palette(pal_names[i], n)}else{plot.new()}
         }
         
