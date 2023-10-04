@@ -1,7 +1,7 @@
 # MoMAColors
 Palettes inspired by works at the Museum of Modern Art in New York.
 
-This is the sister package to [`MetBrewer`](https://github.com/BlakeRMills/MetBrewer), which contains color schemes based arounda artwork at the Metropolitan Museum of Art in New York. 
+This is the sister package to [`MetBrewer`](https://github.com/BlakeRMills/MetBrewer), which contains color schemes based around artwork at the Metropolitan Museum of Art in New York. 
 Structure of the package was based on coding from the [`PNWColors`](https://github.com/jakelawlor/PNWColors) and [`wesanderson`](https://github.com/karthik/wesanderson) packages.
 
 For requests, questions, comments, concerns, or any thing else, feel free to reach out to me:<br />
