@@ -47,5 +47,5 @@ MoMAPalettes <- list(
   ustwo = list(c("#d7433b", "#f06a63", "#ff8e5e", "#ffcc3d", "#95caa6", "#008d98"), c(6, 5, 2, 3, 1, 4), colorblind=TRUE),
   VanGogh = list(c("#c3a016", "#c3d878", "#58a787", "#8ebacd", "#246893", "#163274", "#0C1F4b"), c(2, 4, 3, 6, 1, 5, 7), colorblind=TRUE),
   vonHeyl = list(c("#f96149", "#ffa479", "#e7d800", "#94aec2", "#0d0c0b"), c(1, 4, 2, 3, 5), colorblind=TRUE),
-  Warhol = list(c("#ff0066", "#328c97", "#a5506d", "#d1aac2", "#b3e0bf", "#edf181", "#db7003", "#fba600", "#f8c1a6", "#ff3200", "#011a51", "#916c37", "#97d1d9"), c(1:13), colorblind=FALSE)
+  Warhol = list(c("#ff0066", "#328c97", "#d1aac2", "#a5506d", "#b3e0bf","#2A9D3D", "#edf181", "#db7003", "#fba600", "#f8c1a6", "#A30000","#ff3200", "#011a51", "#97d1d9",  "#916c37"), c(1:15), colorblind=FALSE)
 )
