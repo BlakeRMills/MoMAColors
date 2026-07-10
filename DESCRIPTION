@@ -7,7 +7,6 @@ Description: Implements color palettes inspired by artwork at the Museum of
     Modern Art, with helpers for using them in 'ggplot2'.
 Imports: 
     ggplot2,
-    ggstream,
     cowplot,
     graphics,
     stats
