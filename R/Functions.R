@@ -489,15 +489,19 @@ test.plots.moma <- function(palette_name, n, direction=1, override_order=FALSE){
     theme(legend.position = "none",
           plot.background = element_rect(color="white", fill="white"))
   
-  stream <- data.frame(col=sort(rep(letters[1:n], 10)))
-  
-  stream_plot <- ggplot(data = stream) +
-    geom_stream(aes(x=rep(1:10, n), y=runif(10*n, 0, 3), fill=col), extra_span = 0.15) +
-    scale_x_continuous(expand = c(0, 0.04)) +
-    scale_fill_manual(values=test_pal) +
-    theme_void() +
-    theme(legend.position = "none",
-          plot.background = element_rect(color="white", fill="white"))
+stream <- data.frame(
+    x = rep(1:10, n),
+    y = runif(10 * n, 0, 3),
+    col = sort(rep(letters[1:n], 10))
+  )
+
+  stream_plot <- ggplot2::ggplot(stream, ggplot2::aes(x = x, y = y, fill = col)) +
+    ggplot2::geom_area(position = "stack", colour = "transparent") +
+    ggplot2::scale_x_continuous(expand = c(0, 0.04)) +
+    ggplot2::scale_fill_manual(values = test_pal) +
+    ggplot2::theme_void() +
+    ggplot2::theme(legend.position = "none",
+                   plot.background = ggplot2::element_rect(colour = "white", fill = "white"))
   
   violin_plot <- ggplot() +
     geom_violin(aes(x=sort(rep(1:n, 15)), y=rnorm(15*n, 0, 0.75), fill=sort(rep(letters[1:n], 15))), color="transparent") +
