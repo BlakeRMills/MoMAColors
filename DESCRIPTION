@@ -1,9 +1,10 @@
 Package: MoMAColors
 Title: Color Palettes Inspired by Artwork at the Museum of Modern Art in New York City
 Version: 0.0.0.9000
-Author: Blake Robert Mills
-Maintainer: Blake Robert Mills <blakerobertmills@gmail.com>
-Description: Implements the color palettes for use in ggplot2.
+Authors@R: 
+    person("Blake Robert", "Mills", email = "blakerobertmills@gmail.com", role = c("aut", "cre"))
+Description: Implements color palettes inspired by artwork at the Museum of
+    Modern Art, with helpers for using them in 'ggplot2'.
 Imports: 
     ggplot2,
     ggstream,
