@@ -173,11 +173,12 @@ colorblind.friendly.moma <- function(palette_name){
 #' geom_point() +
 #' scale_color_moma_d("Warhol")
 #' @export
-scale_color_moma_d <- function(palette_name, direction = 1, override_order = FALSE, ...){
-  discrete_scale(aesthetics = "colour",
-                 scale_name="moma_d",
-                 palette= function(n) moma.colors(palette_name=palette_name, n = n, direction = direction, override_order = override_order),
-                 ...)
+scale_color_moma_d <- function(palette_name, direction = 1, override_order = FALSE, ...) {
+  ggplot2::discrete_scale(
+    aesthetics = "colour",
+    palette = function(n) moma.colors(palette_name = palette_name, n = n, direction = direction, override_order = override_order),
+    ...
+  )
 }
 
 #' MoMAColors palettes for plotting with ggplot2
@@ -204,11 +205,12 @@ scale_color_moma_d <- function(palette_name, direction = 1, override_order = FAL
 #' geom_violin() +
 #' scale_fill_moma_d("vonHeyl")
 #' @export
-scale_fill_moma_d <- function(palette_name, direction = 1, override_order = FALSE, ...){
-  discrete_scale(aesthetics = "fill",
-                 scale_name="moma_d",
-                 palette= function(n) moma.colors(palette_name=palette_name, n = n, direction = direction, override_order = override_order),
-                 ...)
+scale_fill_moma_d <- function(palette_name, direction = 1, override_order = FALSE, ...) {
+  ggplot2::discrete_scale(
+    aesthetics = "fill",
+    palette = function(n) moma.colors(palette_name = palette_name, n = n, direction = direction, override_order = override_order),
+    ...
+  )
 }
 
 #' MoMAColors palettes for plotting with ggplot2
