@@ -3,7 +3,7 @@ Title: Color Palettes Inspired by Artwork at the Museum of Modern Art in New Yor
 Version: 0.0.0.9000
 Author: Blake Robert Mills
 Maintainer: Blake Robert Mills <blakerobertmills@gmail.com>
-Description: What the package does (one paragraph).
+Description: Implements the color palettes for use in ggplot2.
 Imports: 
     ggplot2,
     ggstream,
