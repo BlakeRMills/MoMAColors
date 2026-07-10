@@ -463,7 +463,6 @@ display.all.moma <- function(n, sequential = FALSE, colorblind_only = FALSE, dir
 #' that colors are not always selected in sequential order from the full palette. If override_order is set to TRUE,
 #' colors are selected in sequential order from the full palette instead. Default is FALSE.
 #' @export
-#' @importFrom ggstream geom_stream
 #' @importFrom cowplot ggdraw plot_grid draw_label
 #' @importFrom stats rnorm runif
 
